@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is clone of youtube">
+    <title>You Tube</title>
+    <link rel="icon" href="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Normalize CSS Link -->
+    <!-- Aos Js LInks-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/helper.css">
+    <!-- Website Main CSS Link -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/watchpage.css">
+</head>
+
+<body onscroll="onscroll(this)">
+
+    <!-- Website Header Section -->
+    <header>
+        <nav class="main_nav">
+            <!-- Nav Left Section -->
+            <div class="nav_left">
+                <button class="burger_btn" title="burger menu button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+                        <path
+                            d="M17.25 1.50003H0.75V0.583359H17.25V1.50003ZM17.25 6.08336H0.75V7.00003H17.25V6.08336ZM17.25 11.5834H0.75V12.5H17.25V11.5834Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <a href="/index.html"><img class="logo" src="/images/youtube_logo.png" alt="" title="logo"></a>
+            </div>
+
+            <!-- Nav Left Section -->
+            <div class="nav_center">
+                <label>
+                    <input type="text" placeholder="Qidiruv">
+                    <button class="search_btn" title="Qidiruv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M17.87 17.17L12.28 11.58C13.35 10.35 14 8.75 14 7C14 3.13 10.87 0 7 0C3.13 0 0 3.13 0 7C0 10.87 3.13 14 7 14C8.75 14 10.35 13.35 11.58 12.29L17.17 17.88L17.87 17.17ZM7 13C3.69 13 1 10.31 1 7C1 3.69 3.69 1 7 1C10.31 1 13 3.69 13 7C13 10.31 10.31 13 7 13Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <button class="voice_btn" title="Ovozli Qidiruv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none">
+                            <path
+                                d="M7 0C5.34 0 4 1.37 4 3.07V8.93C4 10.63 5.34 12 7 12C8.66 12 10 10.63 10 8.93V3.07C10 1.37 8.66 0 7 0ZM13.5 9H12.5C12.5 12.03 10.03 14.5 7 14.5C3.97 14.5 1.5 12.03 1.5 9H0.5C0.5 12.24 2.89 14.93 6 15.41V18H8V15.41C11.11 14.93 13.5 12.24 13.5 9Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </label>
+            </div>
+
+            <!-- Nav Left Section -->
+            <div class="nav_right">
+                <button class="create" title="video yaratish">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                        <path
+                            d="M12 8H9V11H7V8H4V6H7V3H9V6H12V8ZM15 1H1V13H15V6.61L19 8.44V3.56L15 5.39V1ZM16 0V3.83L20 2V10L16 8.17V14H0V0H16Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="notifications" title="notificate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                        <path
+                            d="M6 19H10C10 20.1 9.1 21 8 21C6.9 21 6 20.1 6 19ZM16 16.35V18H0V16.35L2 14.47V9.32001C2 6.40001 3.56 4.10001 6 3.34001V2.96001C6 1.54001 7.49 0.460006 8.99 1.20001C9.64 1.52001 10 2.23001 10 2.96001V3.35001C12.44 4.10001 14 6.41001 14 9.33001V14.48L16 16.35ZM15 16.77L13 14.89V9.42001C13 6.95001 11.81 5.06001 9.87 4.32001C8.61 3.79001 7.23 3.82001 6.03 4.35001C4.15 5.11001 3 6.99001 3 9.42001V14.89L1 16.77V17H15V16.77Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="profile" title="profile">
+                    <img src="https://avatars.githubusercontent.com/u/136093438?v=4" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Website Main Section -->
+    <main class="parent_div">
+        <!-- Main Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar_links">
+                <li><a href="/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+                            <path d="M0 7V18H6V12H10V18H16V7L8 0L0 7Z" fill="white" />
+                        </svg>
+                        Asosiy
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                            <path
+                                d="M6.00001 12.65V7.35L11 10L6.00001 12.65ZM13.77 8.32C13 8 12.57 7.82 12.57 7.82L14 7.06C15.84 6.1 16.53 3.83 15.56 2C14.59 0.169999 12.32 -0.530001 10.49 0.439999L2.00001 4.94C0.710014 5.62 -0.0699859 6.98 1.40686e-05 8.43C0.0700141 9.85 0.930014 11.1 2.22001 11.68C2.25001 11.69 3.42001 12.18 3.42001 12.18L2.00001 12.93C0.170014 13.9 -0.529986 16.17 0.440014 18C1.41001 19.83 3.68001 20.53 5.51001 19.56L14.01 15.06C15.3 14.38 16.07 13.02 16 11.57C15.93 10.15 15.06 8.89 13.77 8.32ZM13.54 14.18L5.04001 18.68C3.70001 19.39 2.03001 18.88 1.32001 17.54C0.610014 16.2 1.12001 14.53 2.46001 13.82L4.50001 12.74V11.53L3.81001 11.25L2.70001 10.79C1.71001 10.38 1.05001 9.44 1.00001 8.38C0.950014 7.32 1.52001 6.32 2.46001 5.82L10.96 1.32C12.3 0.609999 13.97 1.12 14.68 2.46C15.39 3.8 14.88 5.47 13.54 6.18L11.5 7.26V8.47L13.3 9.21C14.29 9.62 14.95 10.56 15 11.62C15.05 12.68 14.48 13.68 13.54 14.18Z"
+                                fill="white" />
+                        </svg>
+                        Shorts
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M8 4L14 7.5L8 11V4ZM15 17H1V3H0V18H15V17ZM18 15H3V0H18V15ZM4 14H17V1H4V14Z"
+                                fill="white" />
+                        </svg>
+                        Obunalar
+                    </a></li>
+
+                <!-- Line - HR -->
+                <div class="line"></div>
+                <!-- Line - HR -->
+
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M7 5L13 9L7 13V5ZM18 0V18H0V0H18ZM17 1H1V17H17V1Z" fill="white" />
+                        </svg>
+                        Your Videos
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path
+                                d="M13.97 14.95L9.00002 11.87V5H11V10.76L15.03 13.25L13.97 14.95ZM21 10C21 15.51 16.51 20 11 20C5.49002 20 1.00002 15.51 1.00002 10H2.00002C2.00002 14.96 6.04002 19 11 19C15.96 19 20 14.96 20 10C20 5.04 15.96 1 11 1C7.81002 1 4.92002 2.64 3.28002 5.38C3.17002 5.56 3.06002 5.75 2.97002 5.94C2.96002 5.96 2.95002 5.98 2.94002 6H7.00002V7H0.960022V1H1.96002V5.74C2.00002 5.65 2.03002 5.57 2.07002 5.49C2.18002 5.27 2.30002 5.07 2.42002 4.86C4.22002 1.86 7.51002 0 11 0C16.51 0 21 4.49 21 10Z"
+                                fill="white" />
+                        </svg>
+                        History
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path
+                                d="M15.77 7H11.54L13.06 2.06C13.38 1.03 12.54 0 11.38 0C10.8 0 10.24 0.24 9.86 0.65L4 7H0V17H4H5H14.43C15.49 17 16.41 16.33 16.62 15.39L17.96 9.39C18.23 8.15 17.18 7 15.77 7ZM4 16H1V8H4V16ZM16.98 9.17L15.64 15.17C15.54 15.65 15.03 16 14.43 16H5V7.39L10.6 1.33C10.79 1.12 11.08 1 11.38 1C11.64 1 11.88 1.11 12.01 1.3C12.08 1.4 12.16 1.56 12.1 1.77L10.58 6.71L10.18 8H11.53H15.76C16.17 8 16.56 8.17 16.79 8.46C16.92 8.61 17.05 8.86 16.98 9.17Z"
+                                fill="white" />
+                        </svg>
+                        Liked Videos
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                            <path
+                                d="M8.5 10.41V5.6L12.67 8L8.5 10.41ZM6.48 4.45L5.77 3.75C4.68 4.83 4 6.34 4 8C4 9.66 4.68 11.17 5.77 12.25L6.48 11.54C5.57 10.64 5 9.39 5 8C5 6.61 5.57 5.36 6.48 4.45ZM14.23 3.75L13.52 4.46C14.43 5.36 15 6.61 15 8C15 9.39 14.43 10.64 13.52 11.55L14.23 12.26C15.32 11.17 16 9.66 16 8C16 6.34 15.32 4.83 14.23 3.75ZM3.65 1.63L2.95 0.919998C1.13 2.73 0 5.24 0 8C0 10.76 1.13 13.27 2.95 15.08L3.66 14.37C2.02 12.74 1 10.49 1 8C1 5.51 2.02 3.26 3.65 1.63ZM17.05 0.919998L16.34 1.63C17.98 3.26 19 5.51 19 8C19 10.49 17.98 12.74 16.35 14.37L17.06 15.08C18.87 13.27 20 10.76 20 8C20 5.24 18.87 2.73 17.05 0.919998Z"
+                                fill="white" />
+                        </svg>
+                        Miks - playlists
+                    </a></li>
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M12.97 14.95L8 11.87V5H10V10.76L14.03 13.25L12.97 14.95ZM10 1C5.04 1 1 5.04 1 10C1 14.96 5.04 19 10 19C14.96 19 19 14.96 19 10C19 5.04 14.96 1 10 1ZM10 0C15.52 0 20 4.48 20 10C20 15.52 15.52 20 10 20C4.48 20 0 15.52 0 10C0 4.48 4.48 0 10 0Z"
+                                fill="white" />
+                        </svg>
+                        Watch Later
+                    </a></li>
+
+                <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                            <path
+                                d="M6.99998 7.7L0.599976 1.4L1.29998 0.699997L6.89998 6.3L12.5 0.699997L13.2 1.4L6.99998 7.7Z"
+                                fill="white" />
+                        </svg>
+                        Show More
+                    </a></li>
+
+                <!-- Line - HR -->
+                <div class="line"></div>
+                <!-- Line - HR -->
+
+
+            </ul>
+
+            <div class="subscibtions">
+                <h1>Obunalar</h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="/images/channels4_profile (2).jpg" alt="">
+                                <p>Texnoplov</p>
+                            </div>
+                            <ion-icon name="radio-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.googleusercontent.com/J3u3Ur0yv_eh75URRCU8QmMp8ikDBNsUY7uZx6L6eSxUrIIu8SFjB7h8s_-AFL1JJmTdxTZL9Q=s176-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <p>Lofi Girls</p>
+                            </div>
+                            <ion-icon name="radio-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.googleusercontent.com/9k0N3CXvGaQj44oSDb-r63amGX2w-orEyp409sTBp0tK4WEuZTJcdhO5XzmWaschG1aCcVjWnA=s176-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <p>Coding Lab</p>
+                            </div>
+                            <ion-icon name="radio-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.ggpht.com/S0-Ulumsw0588ELp2HLJwI1OFj2eSHhq1LD1_5tCncsyzbz8V6ataAwu-c8b0gKWyqF4iBvNsw=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    alt="">
+                                <p>Temur Khatamov</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                <circle cx="2" cy="2" r="2" fill="#3DA6FF" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.ggpht.com/8D4jZR7xTtKL5KCxn00ADyQ_Sr5XtD3pGqbVeSaG2xpu5QwRCV28P7CIZU9CTYKT5MDCh2g7sqE=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    alt="">
+                                <p>ISOMTV</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                <circle cx="2" cy="2" r="2" fill="#3DA6FF" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.ggpht.com/ltGc4b9UMCMFMiyQKt-RaGfNdokCN-nfhFDgz0D2FscRIno3J_JTsdI94erXzTEZPHwEoA0piA=s176-c-k-c0x00ffffff-no-rj-mo"
+                                    alt="">
+                                <p>Konsta Uz</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                <circle cx="2" cy="2" r="2" fill="#3DA6FF" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <img src="https://yt3.ggpht.com/ytc/AIf8zZTM49hEx9zyui_0zDZKi75EgqJPJfuDmWu1cePdQQ=s68-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <p>MrBeast</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                                <circle cx="2" cy="2" r="2" fill="#3DA6FF" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="video_place sec_page_wrapper">
+
+            <!-- This Video Place -->
+            <div class="center_videos ">
+                <div class="current">
+                    <div class="this_video">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/PZUr2YyYmFY?si=jqfgoX5gZLSK1OxJ"
+                            frameborder="0"></iframe>
+                    </div>
+                    <h1 class="videoTitle">Konsta - Insonlar (Official Music Video)</h1>
+                    <div class="channel_informations">
+                        <div class="info_left">
+                            <div class="channel_">
+                                <img src="https://yt3.ggpht.com/ltGc4b9UMCMFMiyQKt-RaGfNdokCN-nfhFDgz0D2FscRIno3J_JTsdI94erXzTEZPHwEoA0piA=s88-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <div>
+                                    <h1>Konsta Uz
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                            viewBox="0 0 10 11" fill="none">
+                                            <path
+                                                d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                                fill="#AAAAAA" />
+                                        </svg>
+                                    </h1>
+                                    <span>142 ming obunachi</span>
+                                </div>
+                            </div>
+                            <button class="subscribe">Obuna</button>
+                        </div>
+                        <div class="info_right">
+
+                            <button class="like_button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"
+                                    fill="none">
+                                    <path
+                                        d="M15.77 7H11.54L13.06 2.06C13.38 1.03 12.54 0 11.38 0C10.8 0 10.24 0.24 9.86 0.65L4 7H0V17H4H5H14.43C15.49 17 16.41 16.33 16.62 15.39L17.96 9.39C18.23 8.15 17.18 7 15.77 7ZM4 16H1V8H4V16ZM16.98 9.17L15.64 15.17C15.54 15.65 15.03 16 14.43 16H5V7.39L10.6 1.33C10.79 1.12 11.08 1 11.38 1C11.64 1 11.88 1.11 12.01 1.3C12.08 1.4 12.16 1.56 12.1 1.77L10.58 6.71L10.18 8H11.53H15.76C16.17 8 16.56 8.17 16.79 8.46C16.92 8.61 17.05 8.86 16.98 9.17Z"
+                                        fill="white" />
+                                </svg>19 ming</button>
+
+                            <button class="share_btn">
+                                <ion-icon name="arrow-redo-outline"></ion-icon>
+                                Ulashish
+                            </button>
+                            <button class="more_options_btn">
+                                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="recomendation_videos" style="color: white;">
+                <a href="/pages/konsta-odamlar-oficialmusicvideo.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/insonlar_konsta.png" alt="">
+                        <div>
+                            <h1>Konsta - Insonlar (Official Music Video)</h1>
+                            <p>Konsta Uz <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>770 ming marta • 1 yil oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/pages/isomtv-1kunda-10mlnishlab_topdim64.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/isom_tv_1kunda.png" alt="">
+                        <div>
+                            <h1>24 SOATDA 10MLN ISHLAB TOPDIM</h1>
+                            <p>ISOM TV <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>6,4 mln marta • 1 yil oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./subyektiv_ozbek-trackchilar-aytilmagan.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/subyektiv_americadg.png" alt="">
+                        <div>
+                            <h1>Aytilmagan Haqiqatlar - O'zbek trakchilari</h1>
+                            <p>SUBYEKTIV <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>1,8 ming marta • 4 oy oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./temur-xatamov_technlgy.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/temur_xatamov_iphone.png" alt="">
+                        <div>
+                            <h1>150$ ga qanaqa telefon olgan yaxshi</h1>
+                            <p>Temur Khatamov <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>39 ming marta • 4 kun oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./wengalbli-mercades_padaril.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/wengalbli_mersaced.png" alt="">
+                        <div>
+                            <h1>WENGALLBI ПОДАРИЛ НОВУЮ ГРАНТУ!</h1>
+                            <p>WENGALLBI <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>190 ming marta • 1 kun oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/pages/konsta-odamlar-oficialmusicvideo.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/insonlar_konsta.png" alt="">
+                        <div>
+                            <h1>Konsta - Insonlar (Official Music Video)</h1>
+                            <p>Konsta Uz <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>770 ming marta • 1 yil oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/pages/isomtv-1kunda-10mlnishlab_topdim64.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/isom_tv_1kunda.png" alt="">
+                        <div>
+                            <h1>24 SOATDA 10MLN ISHLAB TOPDIM</h1>
+                            <p>ISOM TV <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>6,4 mln marta • 1 yil oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./subyektiv_ozbek-trackchilar-aytilmagan.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/subyektiv_americadg.png" alt="">
+                        <div>
+                            <h1>Aytilmagan Haqiqatlar - O'zbek trakchilari</h1>
+                            <p>SUBYEKTIV <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>1,8 ming marta • 4 oy oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./temur-xatamov_technlgy.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/temur_xatamov_iphone.png" alt="">
+                        <div>
+                            <h1>150$ ga qanaqa telefon olgan yaxshi</h1>
+                            <p>Temur Khatamov <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>39 ming marta • 4 kun oldin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./wengalbli-mercades_padaril.html">
+                    <div class="rec_item">
+                        <img src="/images/recomendations/wengalbli_mersaced.png" alt="">
+                        <div>
+                            <h1>WENGALLBI ПОДАРИЛ НОВУЮ ГРАНТУ!</h1>
+                            <p>WENGALLBI <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                    viewBox="0 0 10 11" fill="none">
+                                    <path
+                                        d="M5 0.5C2.25 0.5 0 2.75 0 5.5C0 8.25 2.25 10.5 5 10.5C7.75 10.5 10 8.25 10 5.5C10 2.75 7.75 0.5 5 0.5ZM3.9 8.15L1.8 6.1L2.5 5.4L3.9 6.75L7.5 3.2L8.2 3.9L3.9 8.15Z"
+                                        fill="#AAAAAA" />
+                                </svg>
+                            </p>
+                            <p>190 ming marta • 1 kun oldin</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Website Footer Section -->
+    <footer></footer>
+
+</body>
+<!-- Main Js -->
+<script src="/js/main.js"></script>
+<!-- Ion_Icons Links -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

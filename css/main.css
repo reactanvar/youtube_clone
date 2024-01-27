@@ -1,0 +1,473 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0F0F0F;
+}
+
+.main_nav {
+    width: 100%;
+    display: flex;
+    padding: 10px 2%;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    
+}
+.main_nav.active_nav{
+    background: #0f0f0fe2;
+    backdrop-filter: blur(30px);
+}
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.nav_left .logo {
+    width: 110px;
+    transform: translateX(10%);
+}
+
+
+
+.nav_left .burger_btn:hover {
+    background: rgba(192, 192, 192, 0.158);
+}
+
+.nav_left .burger_btn:active {
+    background: rgba(192, 192, 192, 0.258);
+    border: 1px solid rgba(192, 192, 192, 0.231);
+}
+
+.nav_left .burger_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+}
+
+.nav_left .burger_btn svg {
+    font-size: 20px;
+}
+
+.nav_center {
+    width: 45%;
+}
+
+.nav_center label {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    align-items: center;
+}
+
+.nav_center label input {
+    background: none;
+    height: 40px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    padding: 0 3%;
+    width: 100%;
+    border: 1.3px solid rgba(192, 192, 192, 0.205);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.nav_center .search_btn {
+    background: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-top: 1.3px solid rgba(192, 192, 192, 0.168);
+    border-right: 1.3px solid rgba(192, 192, 192, 0.168);
+    border-bottom: 1.3px solid rgba(192, 192, 192, 0.168);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background: rgba(192, 192, 192, 0.108);
+}
+
+.nav_center .voice_btn {
+    background: none;
+    border: none;
+    width: 50px;
+    display: flex;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 2%;
+    background: rgba(192, 192, 192, 0.108);
+}
+
+.nav_right {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.nav_right .create {
+    background: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: none;
+}
+
+.nav_right .profile {
+    width: 50px;
+    height: 50px;
+}
+
+.nav_right .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav_right .create:hover {
+    background: rgba(192, 192, 192, 0.158);
+}
+
+.nav_right .create:active {
+    background: rgba(192, 192, 192, 0.258);
+}
+
+.nav_right .notifications:hover {
+    background: rgba(192, 192, 192, 0.158);
+}
+
+.nav_right .notifications:active {
+    background: rgba(192, 192, 192, 0.258);
+}
+
+.nav_right .notifications {
+    background: none;
+    border: none;
+    width: 40px;
+    margin-right: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.nav_right .profile {
+    border: 1px solid rgba(192, 192, 192, 0.379);
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+/* Main Content Styles */
+main {
+    width: 100%;
+}
+
+.content {
+    padding: 100px 40px 40px 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.video_card {
+    color: white;
+}
+
+.video_card img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.channel_infos {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.channel_profile {
+    width: 40px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 3%;
+}
+
+.channel_profile img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video_card a {
+    color: white;
+}
+
+.channel_infos h1 {
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.channel_infos p {
+    font-size: 13px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    color: rgb(204, 204, 204);
+}
+
+.channel_infos p svg {
+    margin-left: 3%;
+}
+
+.channel_infos span {
+    margin-top: 5px;
+    display: block;
+    font-size: 13px;
+    color: rgb(204, 204, 204);
+}
+
+.sidebar {
+    display: block;
+    width: 330px;
+    user-select: none;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-left: 30px;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+}
+
+.sidebar_links {
+    margin-top: 80px;
+}
+
+.sidebar_links li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.sidebar_links li a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_links li a:hover {
+    background: rgba(192, 192, 192, 0.096);
+}
+
+.sidebar_links li a svg {
+    margin-right: 20px;
+}
+
+.line {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 1px;
+    margin-top: 20px;
+    background: rgba(192, 192, 192, 0.187);
+}
+
+.subscibtions {
+    width: 100%;
+}
+
+.subscibtions h1 {
+    color: rgb(192, 192, 192);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subscibtions li {
+    list-style: none;
+}
+.subscibtions li ion-icon{
+    color: red;
+}
+.subscibtions ul li a div img {
+    width: 28px;
+    border-radius: 100%;
+    height: 28px;
+    object-fit: cover;
+}
+
+.subscibtions ul li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.subscibtions ul li a {
+    color: white;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscibtions ul li a:hover {
+    background: rgba(192, 192, 192, 0.096);
+}
+
+.subscibtions ul li a div {
+    display: flex;
+    align-items: center;
+}
+
+.subscibtions ul li a div p {
+    margin-left: 20px;
+}
+
+.subscibtions ul li {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Media Querry Styles ---> Responsive Design (mobile , tablet) */
+
+@media (max-width: 576px) {
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .content {
+        padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 0px;
+    }
+
+    .video_card {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .video_card img {
+        border-radius: 10px;
+    }
+
+    .nav_center {
+        display: none;
+    }
+
+    .nav_right .create {
+        display: none;
+    }
+
+    .main_nav {
+        background: #0F0F0F;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px)  {
+    .nav_center {
+        display: none;
+    }
+    .sidebar {
+        width: 280px;
+        position: fixed;
+        padding: 0 30px;
+        background: #0F0F0F;
+    }
+    .subscibtions ul li a {
+        color: white;
+        width: 80%;
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sidebar{
+        display: none;
+    }
+}
+/* 
+@media(prefers-color-scheme: light) {
+    body{
+        background: white;
+    }
+    .video_card p{
+        color: black;
+    }
+   .video_card span{
+        color: black;
+    }
+    .video_titles h1{
+        color: black;
+    }
+    .main_nav{
+        background: white;
+    }
+    .nav_left .burger_btn {
+        background: gray;
+    }
+}
+@media(prefers-color-scheme: black) {
+    body{
+        background: #0F0F0F;
+    }
+    .sidebar_links li a{
+        color: black;
+    }
+} */
